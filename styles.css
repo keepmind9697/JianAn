@@ -1,0 +1,175 @@
+/* Resetting default margin and font */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Styling the main container */
+.container {
+    width: 80%; /* Setting width to 80% of the viewport */
+    margin: 0 auto; /* Centering the container horizontally */
+    padding: 20px 0; /* Adding padding at the top and bottom */
+    display: flex; /* Using flexbox for layout */
+    justify-content: space-between; /* Distributing space evenly between flex items */
+    align-items: center; /* Aligning items vertically in the center */
+}
+
+/* Styling the logo */
+.logo {
+    width: 50px; /* Setting width */
+    height: 50px; /* Setting height */
+    background-color: #333; /* Background color */
+    border-radius: 50%; /* Making it a circle */
+}
+
+/* Styling the header */
+header {
+    background-color: navy; /* Background color */
+    color: white; /* Text color */
+}
+
+/* Styling header's h1 */
+header h1 {
+    margin: 0; /* Removing default margin */
+}
+
+/* Styling the navigation */
+nav ul {
+    list-style-type: none; /* Removing default list styles */
+    margin: 0; /* Removing default margin */
+    padding: 0; /* Removing default padding */
+    display: flex; /* Using flexbox for layout */
+}
+
+/* Styling navigation items */
+nav ul li {
+    margin-right: 20px; /* Adding margin between items */
+}
+
+/* Removing margin from the last navigation item */
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+/* Styling navigation links */
+nav ul li a {
+    color: white; /* Text color */
+    text-decoration: none; /* Removing default underline */
+}
+
+/* Change link color on hover */
+nav ul li a:hover {
+    color: yellow;
+    background-color: orange;
+}
+
+
+
+/* Styling the aside (sidebar) */
+aside {
+    background-color: #333; /* Background color */
+    color: white; /* Text color */
+    padding: 10px; /* Adding padding */
+    width: 100px; /* Setting width */
+    position: fixed; /* Fixing its position */
+    top: 0; /* Aligning to the top of the viewport */
+    bottom: 0; /* Aligning to the bottom of the viewport */
+    display: flex; /* Using flexbox for layout */
+    justify-content: center; /* Centering horizontally */
+    align-items: center; /* Centering vertically */
+}
+
+/* Styling the aside navigation */
+aside nav ul {
+    flex-direction: column; /* Displaying navigation items vertically */
+}
+
+/* Styling aside navigation items */
+aside nav ul li {
+    margin-bottom: 10px; /* Adding margin between items */
+}
+
+/* Styling aside navigation links */
+aside nav ul li a {
+    color: rgb(255, 0, 0); /* Text color */
+    text-decoration: none; /* Removing default underline */
+}
+
+/* Styling aside navigation links on hover */
+aside nav ul li a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Styling sections */
+section {
+    padding: 40px 0; /* Adding padding */
+    color: #333; /* Text color */
+    text-align: center; /* Centering text */
+}
+
+/* Styling the hero section */
+.hero {
+    background-image: url('images\ \(1\).jpeg'); /* Background image */
+    background-size: contain; /* Ensure full image is visible */
+    background-repeat: no-repeat; /* Prevent image from repeating */
+    background-position: center; /* Center the image */
+    min-height: 100vh; /* Set minimum height to full viewport height */
+}
+
+/* Adjusting hero container padding */
+.hero .container {
+    padding-top: 100px; /* Adding top padding */
+}
+
+/* Styling generic sections */
+.section {
+    background-color: navy; /* Background color */
+    color: white; /* Text color */
+}
+
+/* Styling sections with class 'red' */
+.red {
+    background-color: red; /* Background color */
+}
+
+/* Styling content container within the main container */
+.container .content {
+    max-width: 800px; /* Setting maximum width */
+    margin: 0 auto; /* Centering horizontally */
+}
+
+/* Styling paragraphs within the main container */
+.container p {
+    line-height: 1.5; /* Setting line height */
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.grid-item {
+    background-color: #ddd;
+    padding: 20px;
+    text-align: center;
+}
+
+.item1 {
+    grid-column: 1 / span 1;
+}
+
+.item2 {
+    grid-column: 2 / span 1;
+}
+
+.item3 {
+    grid-column: 3 / span 1;
+}
+
+
+/* Styling the footer */
+footer {
+    background-color: navy; /* Background color */
+    color: white; /* Text color */
+}
